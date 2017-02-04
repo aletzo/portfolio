@@ -33,6 +33,19 @@ p {
 .page .content {
     width: 80%;
 }
+.page .content.full {
+    overflow: hidden;
+    width: 100%;
+}
+.page .col {
+    float: left;
+}
+.page .col.two {
+    width: 50%;
+}
+.page .col.three {
+    width: 33%;
+}
 .page:nth-child(2n) .content {
   margin-left: 0;
   margin-right: auto;
