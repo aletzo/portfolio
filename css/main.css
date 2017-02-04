@@ -10,8 +10,6 @@ body {
     font-family: 'Josefin Sans', 'Helvetica Neue', sans-serif;
     margin:0;
     padding:0;
-    perspective: 1px;
-    transform-style: preserve-3d;
     height: 100%;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -22,13 +20,14 @@ p {
     line-height: 150%;
 }
 
+
+
 .page {
     position: relative;
     padding: 15vh 10%;
     min-height: 100vh;
     width: 100vw;
     box-sizing: border-box;
-    transform-style: inherit;
 }
 .page .content {
     width: 80%;
@@ -135,7 +134,7 @@ p {
     opacity: 0;
 }
 
-#page1 .slogan.final {
+#page1 .sloganWrapper:last-child .slogan {
     animation: show 4s forwards;
     opacity: 0;
 }
@@ -145,27 +144,27 @@ p {
                blinking 1s step-end infinite;
 }
 
-#page1 .slogan.final .cursor {
+#page1 .sloganWrapper:last-child .cursor {
     animation: type .5s steps(21, end) forwards,
                blinking 1s step-end infinite;
 }
 
-#page1 #slogan1,  #page1 #slogan1  .cursor { animation-delay: 2s;  }
-#page1 #slogan2,  #page1 #slogan2  .cursor { animation-delay: 6s;  }
-#page1 #slogan3,  #page1 #slogan3  .cursor { animation-delay: 10s; }
-#page1 #slogan4,  #page1 #slogan4  .cursor { animation-delay: 14s; }
-#page1 #slogan5,  #page1 #slogan5  .cursor { animation-delay: 18s; }
-#page1 #slogan6,  #page1 #slogan6  .cursor { animation-delay: 22s; }
-#page1 #slogan7,  #page1 #slogan7  .cursor { animation-delay: 26s; }
-#page1 #slogan8,  #page1 #slogan8  .cursor { animation-delay: 30s; }
-#page1 #slogan9,  #page1 #slogan9  .cursor { animation-delay: 34s; }
-#page1 #slogan10, #page1 #slogan10 .cursor { animation-delay: 38s; }
-#page1 #slogan11, #page1 #slogan11 .cursor { animation-delay: 42s; }
-#page1 #slogan12, #page1 #slogan12 .cursor { animation-delay: 46s; }
-#page1 #slogan13, #page1 #slogan13 .cursor { animation-delay: 50s; }
-#page1 #slogan14, #page1 #slogan14 .cursor { animation-delay: 54s; }
-#page1 #slogan15, #page1 #slogan15 .cursor { animation-delay: 58s; }
-#page1 #slogan16, #page1 #slogan16 .cursor { animation-delay: 62s; }
+#page1 .sloganWrapper:nth-child(1)  .slogan, #page1 .sloganWrapper:nth-child(1)  .cursor { animation-delay: 2s;  }
+#page1 .sloganWrapper:nth-child(2)  .slogan, #page1 .sloganWrapper:nth-child(2)  .cursor { animation-delay: 6s;  }
+#page1 .sloganWrapper:nth-child(3)  .slogan, #page1 .sloganWrapper:nth-child(3)  .cursor { animation-delay: 10s; }
+#page1 .sloganWrapper:nth-child(4)  .slogan, #page1 .sloganWrapper:nth-child(4)  .cursor { animation-delay: 14s; }
+#page1 .sloganWrapper:nth-child(5)  .slogan, #page1 .sloganWrapper:nth-child(5)  .cursor { animation-delay: 18s; }
+#page1 .sloganWrapper:nth-child(6)  .slogan, #page1 .sloganWrapper:nth-child(6)  .cursor { animation-delay: 22s; }
+#page1 .sloganWrapper:nth-child(7)  .slogan, #page1 .sloganWrapper:nth-child(7)  .cursor { animation-delay: 26s; }
+#page1 .sloganWrapper:nth-child(8)  .slogan, #page1 .sloganWrapper:nth-child(8)  .cursor { animation-delay: 30s; }
+#page1 .sloganWrapper:nth-child(9)  .slogan, #page1 .sloganWrapper:nth-child(9)  .cursor { animation-delay: 34s; }
+#page1 .sloganWrapper:nth-child(10) .slogan, #page1 .sloganWrapper:nth-child(10) .cursor { animation-delay: 38s; }
+#page1 .sloganWrapper:nth-child(11) .slogan, #page1 .sloganWrapper:nth-child(11) .cursor { animation-delay: 42s; }
+#page1 .sloganWrapper:nth-child(12) .slogan, #page1 .sloganWrapper:nth-child(12) .cursor { animation-delay: 46s; }
+#page1 .sloganWrapper:nth-child(13) .slogan, #page1 .sloganWrapper:nth-child(13) .cursor { animation-delay: 50s; }
+#page1 .sloganWrapper:nth-child(14) .slogan, #page1 .sloganWrapper:nth-child(14) .cursor { animation-delay: 54s; }
+#page1 .sloganWrapper:nth-child(15) .slogan, #page1 .sloganWrapper:nth-child(15) .cursor { animation-delay: 58s; }
+#page1 .sloganWrapper:nth-child(16) .slogan, #page1 .sloganWrapper:nth-child(16) .cursor { animation-delay: 62s; }
 
 
 
@@ -190,18 +189,34 @@ p {
     position: relative;
 }
 #page2 #tasks .task {
-    animation: toggleFade 2s step-end infinite;
+    animation: toggleFade 2s step-end forwards;
     left: 0;
     opacity: 0;
     position: absolute;
 }
-#page2 #tasks .task.first {
+#page2 #tasks .task:first-child {
     opacity: 1;
 }
-#page2 #tasks .task #task2 { animation-delay: 2s; }
-#page2 #tasks .task #task3 { animation-delay: 4s; }
-#page2 #tasks .task #task4 { animation-delay: 6s; }
-#page2 #tasks .task #task5 { animation-delay: 8s; }
+#page2 #tasks .task:last-child {
+    animation: fadeIn 2s step-end forwards;
+}
+#page2 #tasks .task:nth-child(2)  { animation-delay: 2s;  }
+#page2 #tasks .task:nth-child(3)  { animation-delay: 4s;  }
+#page2 #tasks .task:nth-child(4)  { animation-delay: 6s;  }
+#page2 #tasks .task:nth-child(5)  { animation-delay: 8s;  }
+#page2 #tasks .task:nth-child(6)  { animation-delay: 10s; }
+#page2 #tasks .task:nth-child(7)  { animation-delay: 12s; }
+#page2 #tasks .task:nth-child(8)  { animation-delay: 14s; }
+#page2 #tasks .task:nth-child(9)  { animation-delay: 16s; }
+#page2 #tasks .task:nth-child(10) { animation-delay: 18s; }
+#page2 #tasks .task:nth-child(11) { animation-delay: 20s; }
+#page2 #tasks .task:nth-child(12) { animation-delay: 22s; }
+#page2 #tasks .task:nth-child(13) { animation-delay: 24s; }
+#page2 #tasks .task:nth-child(14) { animation-delay: 26s; }
+#page2 #tasks .task:nth-child(15) { animation-delay: 28s; }
+#page2 #tasks .task:nth-child(16) { animation-delay: 30s; }
+#page2 #tasks .task:nth-child(17) { animation-delay: 32s; }
+#page2 #tasks .task:nth-child(18) { animation-delay: 34s; }
 
 #page2 button {
 	background: #B71C1C;
@@ -262,6 +277,11 @@ footer p {
     from,to { border-color: transparent; }
     50% { border-color: rgb(57,252,50); }
 }
+@keyframes fadeIn {
+    from { opacity: 0;   }
+    50%  { opacity: 0.5; }
+    to   { opacity: 1;   }
+}
 @keyframes showAndHide {
     0% {
         opacity: 0;
@@ -288,31 +308,27 @@ footer p {
     }
 }
 @keyframes toggleFade {
-    from {
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-    }
+    from { opacity: 0;   }
+    10%  { opacity: 0.5; }
+    50%  { opacity: 1;   }
+    90%  { opacity: 0.5; }
+    to   { opacity: 0;   }
 }
 @keyframes trail {
     from { border-color: rgb(57,252,50); }
-    to { border-color: transparent; }
+    to   { border-color: transparent; }
 }
 @keyframes type {
     from { width: 100%; }
-    to { width: 0; }
+    to   { width: 0; }
 }
 @keyframes typeAndDelete {
     from { width: 100%; }
-    10% { width: 0; }
-    25% { width: 0; }
-    50% { width: 0; }
-    75% { width: 0; }
-    90% { width: 0; }
-    to { width: 100%; }
+    10%  { width: 0; }
+    25%  { width: 0; }
+    50%  { width: 0; }
+    75%  { width: 0; }
+    90%  { width: 0; }
+    to   { width: 100%; }
 }
 
