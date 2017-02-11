@@ -308,10 +308,10 @@ p {
 
 #page3 {
     background-color: #fff;
-    color: #FF5722;
+    color: #222;
 }
 #page3 abbr {
-    border-bottom: 2px dashed #FF5722;
+    border-bottom: 2px dashed #222;
 }
 #page3 #timeline {
     margin: 2em auto;

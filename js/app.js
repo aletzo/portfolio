@@ -1,8 +1,26 @@
-document.querySelectorAll('.year').forEach(function(y) {
-    const date = document.querySelector('#' + y.id + ' .date');
+const currentYear = new Date().getFullYear();
 
-    date.innerHTML = y.id.replace('year', '');
-});
+let html = '<div class="line half"></div>';
+
+for (var i = currentYear; i >= 2008; i--) {
+    const id = 'year' + i;
+
+    html += '<div class="year" id="' + id + '">'
+          + '<div class="date">' + i + '</div>'
+          + '<div class="techs left"></div>'
+          + '<div class="techs right"></div>'
+          + '</div>';
+
+    if (i != 2008) {
+        html += '<div class="line"></div>';
+    }
+}
+
+html += '<div class="line half"></div>';
+
+document.querySelector('#timeline').innerHTML = html;
+
+
 
 const experience = [
 
