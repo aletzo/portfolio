@@ -38,13 +38,18 @@ p {
     width: 100%;
 }
 .page .col {
+    box-sizing: border-box;
     float: left;
+    padding: 0 0.5em;
 }
 .page .col.two {
     width: 50%;
 }
 .page .col.three {
     width: 33%;
+}
+.page .col.four {
+    width: 25%;
 }
 
 .frenchBlue {
