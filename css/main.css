@@ -234,53 +234,46 @@ p {
 
 
 #page2 {
-  background-color: #2196F3;
+    background-color: #2196F3;
 }
 #page2 strong {
-    color: #B71C1C;
     padding: 3px 2px;
 }
+/*
+ * disable for now
 #page2 strong:hover {
     background-color: #B71C1C;
     border-bottom: 1px solid #B71C1C;
     color: #fff;
     cursor: help;
 }
+ */
 #page2 #tasks {
     display: inline-block;
     height: 1em;
-    min-width: 10em;
+    min-width: 18em;
     position: relative;
 }
 #page2 #tasks .task {
-    animation: toggleFade 2s linear forwards;
     left: 0;
     opacity: 0;
     position: absolute;
 }
 #page2 #tasks .task:first-child {
-    opacity: 1;
 }
 #page2 #tasks .task:last-child {
     animation: fadeIn 2s linear forwards;
 }
-#page2 #tasks .task:nth-child(2)  { animation-delay: 2s;  }
-#page2 #tasks .task:nth-child(3)  { animation-delay: 4s;  }
-#page2 #tasks .task:nth-child(4)  { animation-delay: 6s;  }
-#page2 #tasks .task:nth-child(5)  { animation-delay: 8s;  }
-#page2 #tasks .task:nth-child(6)  { animation-delay: 10s; }
-#page2 #tasks .task:nth-child(7)  { animation-delay: 12s; }
-#page2 #tasks .task:nth-child(8)  { animation-delay: 14s; }
-#page2 #tasks .task:nth-child(9)  { animation-delay: 16s; }
-#page2 #tasks .task:nth-child(10) { animation-delay: 18s; }
-#page2 #tasks .task:nth-child(11) { animation-delay: 20s; }
-#page2 #tasks .task:nth-child(12) { animation-delay: 22s; }
-#page2 #tasks .task:nth-child(13) { animation-delay: 24s; }
-#page2 #tasks .task:nth-child(14) { animation-delay: 26s; }
-#page2 #tasks .task:nth-child(15) { animation-delay: 28s; }
-#page2 #tasks .task:nth-child(16) { animation-delay: 30s; }
-#page2 #tasks .task:nth-child(17) { animation-delay: 32s; }
-#page2 #tasks .task:nth-child(18) { animation-delay: 34s; }
+#page2 #tasks .task:nth-child(1)  { animation: toggleFade1  40s linear infinite; }
+#page2 #tasks .task:nth-child(2)  { animation: toggleFade2  40s linear infinite; }
+#page2 #tasks .task:nth-child(3)  { animation: toggleFade3  40s linear infinite; }
+#page2 #tasks .task:nth-child(4)  { animation: toggleFade4  40s linear infinite; }
+#page2 #tasks .task:nth-child(5)  { animation: toggleFade5  40s linear infinite; }
+#page2 #tasks .task:nth-child(6)  { animation: toggleFade6  40s linear infinite; }
+#page2 #tasks .task:nth-child(7)  { animation: toggleFade7  40s linear infinite; }
+#page2 #tasks .task:nth-child(8)  { animation: toggleFade8  40s linear infinite; }
+#page2 #tasks .task:nth-child(9)  { animation: toggleFade9  40s linear infinite; }
+#page2 #tasks .task:nth-child(10) { animation: toggleFade10 40s linear infinite; }
 
 #page2 button {
 	background: #B71C1C;
@@ -373,6 +366,7 @@ p {
     padding: 1em;
     position: absolute;
     text-align: center;
+    transition: all 0.5s ease;
 }
 #page3 #timeline .year .techs .tech:hover {
     opacity: 1;
@@ -405,6 +399,7 @@ p {
     top: 0;
     text-align: center;
     text-decoration: none;
+    transition: all 0.5s ease;
     width: 100%;
 }
 #page4 a:active {
@@ -462,9 +457,73 @@ footer p {
         opacity: 1;
     }
 }
-@keyframes toggleFade {
-    0%,100% { opacity: 0 }
-    30%, 50%, 70% { opacity: 1 }
+@keyframes toggleFade1 {
+    0%   { opacity: 0 }
+    5%   { opacity: 1 }
+    10%  { opacity: 0 }
+    100% { opacity: 0 }
+}
+@keyframes toggleFade2 {
+    0%   { opacity: 0 }
+    10%  { opacity: 0 }
+    15%  { opacity: 1 }
+    20%  { opacity: 0 }
+    100% { opacity: 0 }
+}
+@keyframes toggleFade3 {
+    0%   { opacity: 0 }
+    20%  { opacity: 0 }
+    25%  { opacity: 1 }
+    30%  { opacity: 0 }
+    100% { opacity: 0 }
+}
+@keyframes toggleFade4 {
+    0%   { opacity: 0 }
+    30%  { opacity: 0 }
+    35%  { opacity: 1 }
+    40%  { opacity: 0 }
+    100% { opacity: 0 }
+}
+@keyframes toggleFade5 {
+    0%   { opacity: 0 }
+    40%  { opacity: 0 }
+    45%  { opacity: 1 }
+    50%  { opacity: 0 }
+    100% { opacity: 0 }
+}
+@keyframes toggleFade6 {
+    0%   { opacity: 0 }
+    50%  { opacity: 0 }
+    55%  { opacity: 1 }
+    60%  { opacity: 0 }
+    100% { opacity: 0 }
+}
+@keyframes toggleFade7 {
+    0%   { opacity: 0 }
+    60%  { opacity: 0 }
+    65%  { opacity: 1 }
+    70%  { opacity: 0 }
+    100% { opacity: 0 }
+}
+@keyframes toggleFade8 {
+    0%   { opacity: 0 }
+    70%  { opacity: 0 }
+    75%  { opacity: 1 }
+    80%  { opacity: 0 }
+    100% { opacity: 0 }
+}
+@keyframes toggleFade9 {
+    0%   { opacity: 0 }
+    80%  { opacity: 0 }
+    85%  { opacity: 1 }
+    90%  { opacity: 0 }
+    100% { opacity: 0 }
+}
+@keyframes toggleFade10 {
+    0%   { opacity: 0 }
+    90%  { opacity: 0 }
+    95%  { opacity: 1 }
+    100% { opacity: 0 }
 }
 @keyframes trail {
     from { border-color: rgb(57,252,50); }
@@ -483,4 +542,5 @@ footer p {
     90%  { width: 0; }
     to   { width: 100%; }
 }
+
 
