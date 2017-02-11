@@ -423,6 +423,36 @@ footer p {
 }
 
 
+@media (max-width: 600px) {
+    .page .content {
+        width: 100%;
+    }
+
+    .page .col.two,
+    .page .col.three,
+    .page .col.four {
+        width: 50%;
+    }
+
+    #page3 #timeline {
+        width: 100%;
+    }
+
+    #page3 #timeline .year .techs .tech {
+        padding: 0.5em;
+    }
+}
+
+@media (max-width: 350px) {
+    .page .col.two,
+    .page .col.three,
+    .page .col.four {
+        width: 100%;
+    }
+
+}
+
+
 @keyframes blinking {
     from,to { border-color: transparent; }
     50% { border-color: rgb(57,252,50); }
