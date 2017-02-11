@@ -30,6 +30,7 @@ p {
     box-sizing: border-box;
 }
 .page .content {
+    overflow: hidden;
     width: 80%;
 }
 .page .content.full {
@@ -44,14 +45,6 @@ p {
 }
 .page .col.three {
     width: 33%;
-}
-.page:nth-child(2n) .content {
-  margin-left: 0;
-  margin-right: auto;
-}
-.page:nth-child(2n+1) .content {
-  margin-left: auto;
-  margin-right: 0;
 }
 
 .frenchBlue {
@@ -69,6 +62,73 @@ p {
 .greekWhite {
     color: #fff;
 }
+
+.color-0  { background-color: #795548; color: #fff; }
+.color-1  { background-color: #B71C1C; color: #fff; }
+.color-2  { background-color: #3F51B5; color: #fff; }
+.color-3  { background-color: #FF9800; color: #fff; }
+.color-4  { background-color: #E91E63; color: #fff; }
+.color-5  { background-color: #9C27B0; color: #fff; }
+.color-6  { background-color: #F44336; color: #fff; }
+.color-7  { background-color: #009688; color: #fff; }
+.color-8  { background-color: #FF5722; color: #fff; }
+.color-9  { background-color: #607D8B; color: #fff; }
+.color-10 { background-color: #004D40; color: #fff; }
+.color-11 { background-color: #1A237E; color: #fff; }
+.color-12 { background-color: #311B92; color: #fff; }
+.color-13 { background-color: #2962FF; color: #fff; }
+.color-14 { background-color: #827717; color: #fff; }
+.color-15 { background-color: #1B5E20; color: #fff; }
+.color-16 { background-color: #880E4F; color: #fff; }
+
+.position-bottom-0  { bottom: 0em;  }
+.position-bottom-1  { bottom: 1em;  }
+.position-bottom-2  { bottom: 2em;  }
+.position-bottom-3  { bottom: 3em;  }
+.position-bottom-4  { bottom: 4em;  }
+.position-bottom-5  { bottom: 5em;  }
+.position-bottom-6  { bottom: 6em;  }
+.position-bottom-7  { bottom: 7em;  }
+.position-bottom-8  { bottom: 8em;  }
+.position-bottom-9  { bottom: 9em;  }
+.position-bottom-10 { bottom: 10em; }
+.position-bottom-11 { bottom: 11em; }
+.position-bottom-12 { bottom: 12em; }
+.position-bottom-13 { bottom: 13em; }
+.position-bottom-14 { bottom: 14em; }
+
+.width-10  { width: 10%;  }
+.width-20  { width: 20%;  }
+.width-30  { width: 30%;  }
+.width-40  { width: 40%;  }
+.width-50  { width: 50%;  }
+.width-60  { width: 60%;  }
+.width-70  { width: 70%;  }
+.width-80  { width: 80%;  }
+.width-90  { width: 90%;  }
+.width-100 { width: 100%; }
+
+.zindex-10 { z-index: 10; }
+.zindex-11 { z-index: 11; }
+.zindex-12 { z-index: 12; }
+.zindex-13 { z-index: 13; }
+.zindex-14 { z-index: 14; }
+.zindex-15 { z-index: 15; }
+.zindex-16 { z-index: 16; }
+.zindex-17 { z-index: 17; }
+.zindex-18 { z-index: 18; }
+.zindex-19 { z-index: 19; }
+.zindex-20 { z-index: 20; }
+.zindex-21 { z-index: 21; }
+.zindex-22 { z-index: 22; }
+.zindex-23 { z-index: 23; }
+.zindex-24 { z-index: 24; }
+.zindex-25 { z-index: 25; }
+.zindex-26 { z-index: 26; }
+.zindex-27 { z-index: 27; }
+.zindex-28 { z-index: 28; }
+.zindex-29 { z-index: 29; }
+.zindex-30 { z-index: 30; }
 
 .pull-right {
     float: right;
@@ -172,7 +232,6 @@ p {
   background-color: #2196F3;
 }
 #page2 strong {
-    border-bottom: 2px dashed #B71C1C;
     color: #B71C1C;
     padding: 3px 2px;
 }
@@ -248,8 +307,79 @@ p {
 
 
 #page3 {
-  background-color: #FF5722;
+    background-color: #fff;
+    color: #FF5722;
 }
+#page3 abbr {
+    border-bottom: 2px dashed #FF5722;
+}
+#page3 #timeline {
+    margin: 2em auto;
+    overflow: hidden;
+    width: 80%;
+}
+#page3 #timeline .line {
+    background-color: #222;
+    height: 7em;
+    margin: 0 auto;
+    position: relative;
+    width: 0.2em;
+    z-index: 100;
+}
+#page3 #timeline .line.half {
+    height: 2em;
+}
+#page3 #timeline .year  {
+    position: relative;
+    width: 100%;
+}
+#page3 #timeline .year .date {
+    background-color: #fff;
+    border-radius: 2em;
+    border: 0.2em solid #222;
+    color: #222;
+    font-size: 1.3em;
+    font-weight: bold;
+    height: 3em;
+    line-height: 3em;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    width: 3em;
+    z-index: 100;
+}
+#page3 #timeline .year .techs {
+    background: #999;
+    position: relative;
+    width: 50%;
+}
+#page3 #timeline .year .techs.left {
+    float: left;
+}
+#page3 #timeline .year .techs.right {
+    float: right;
+}
+#page3 #timeline .year .techs .tech {
+    border-radius: 2em;
+    box-sizing: border-box;
+    font-size: 1em;
+    opacity: 0.7;
+    overflow: hidden;
+    padding: 1em;
+    position: absolute;
+    text-align: center;
+}
+#page3 #timeline .year .techs .tech:hover {
+    opacity: 1;
+    z-index: 31;
+}
+#page3 #timeline .year .techs.left .tech {
+    right: 2em;
+}
+#page3 #timeline .year .techs.right .tech {
+    left: 2em;
+}
+
 
 
 #page4 {

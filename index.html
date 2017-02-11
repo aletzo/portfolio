@@ -3,6 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <title>~/dev/null</title>
     <meta name="description" content="">
 
@@ -81,48 +83,109 @@
     </div>
 
     <div id="page3" class="page">
+
         <div class="content">
-            <ul>
-                <li>
-                    Professional Experience
+            <h1>Professional Experience</h1>
 
-                    HTML 2008 -  
-                    PHP 2008 -  
-                    CSS 2008 - 
-                    JavaScript 2008 -  
-                    jQuery 2008 - 2015
-                    MySQL 2008 -  
-                    Apache 2 2008 - 
-                    Zend Framework 1 2008 - 2010
-                    SQLite 2010 - 2012
-                    symfony 1 2010 - 2013
-                    Ext JS 2010 - 2014
-                    Drupal summer 2010
-                    Wordpress summer 2010
-                    yii 2011 - 2012, 2015 - 2016
-                    Bootstrap 2011 - 
-                    nginx 2011 - 
-                    meteor 2013 - 
-                    Mongo DB 2013 - 
-                    Node.js 2013 - 
-                    Redis summer 2013 
-                    VBA last 6 months 2013 
-                    Symfony 2 2013 - 2014 
-                    angular 1 2013 -
-                    angular 2 2016 - 
-                    React 2016 - 
-                    Silex last 6 months 2016
-                    trello 2013 - 
-                    JIRA 2014 - 2016
-
-                </li>
-            </ul>
+            <p>I began my career as a <abbr title="Linux, Apache, MySQL and PHP">LAMP stack</abbr> developer. During all these years, I have used various libraries, frameworks and tools:</p>
         </div>
+
+        <div id="timeline">
+
+            <!--div id="filter">
+                <label>
+                    Backend
+                    <input type="checkbox">
+                </label>
+                <label>
+                    Frontend
+                    <input type="checkbox">
+                </label>
+                <label>
+                    Project Management
+                    <input type="checkbox">
+                </label>
+            </div-->
+
+            <div class="line half"></div>
+            <div class="year" id="year2017">
+                <div class="date"></div>
+
+                <div class="techs left"></div>
+                <div class="techs right"></div>
+            </div>
+            <div class="line"></div>
+            <div class="year" id="year2016">
+                <div class="date"></div>
+
+                <div class="techs left"></div>
+                <div class="techs right"></div>
+            </div>
+            <div class="line"></div>
+            <div class="year" id="year2015">
+                <div class="date"></div>
+
+                <div class="techs left"></div>
+                <div class="techs right"></div>
+            </div>
+            <div class="line"></div>
+            <div class="year" id="year2014">
+                <div class="date"></div>
+
+                <div class="techs left"></div>
+                <div class="techs right"></div>
+            </div>
+            <div class="line"></div>
+            <div class="year" id="year2013">
+                <div class="date"></div>
+                
+                <div class="techs left"></div>
+                <div class="techs right"></div>
+            </div>
+            <div class="line"></div>
+            <div class="year" id="year2012">
+                <div class="date"></div>
+
+                <div class="techs left"></div>
+                <div class="techs right"></div>
+            </div>
+            <div class="line"></div>
+            <div class="year" id="year2011">
+                <div class="date"></div>
+
+                <div class="techs left"></div>
+                <div class="techs right"></div>
+            </div>
+            <div class="line"></div>
+            <div class="year" id="year2010">
+                <div class="date"></div>
+
+                <div class="techs left"></div>
+                <div class="techs right"></div>
+            </div>
+            <div class="line"></div>
+            <div class="year" id="year2009">
+                <div class="date"></div>
+
+                <div class="techs left"></div>
+                <div class="techs right"></div>
+            </div>
+            <div class="line"></div>
+            <div class="year" id="year2008">
+                <div class="date"></div>
+
+                <div class="techs left"></div>
+                <div class="techs right"></div>
+            </div>
+            <div class="line half"></div>
+        </div>
+
+
     </div>
     
     <div id="page4" class="page">
 
-        <div class="content full">
+        <div class="content">
             <div class="col three">
                 <h2>Personal Projects</h2>
 
@@ -185,6 +248,9 @@
     </div>
         
 
+    <script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.bundle.min.js"></script>
+    <script>window.Chart || document.write('<script src="vendors/chartjs/Chart.bundle.min.js">\x3C/script>')</script>
+    <script src="js/app.js"></script>
 
 </body>
 </html>
