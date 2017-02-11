@@ -374,10 +374,10 @@ p {
     z-index: 31;
 }
 #page3 #timeline .year .techs.left .tech {
-    right: 2em;
+    right: 2.5em;
 }
 #page3 #timeline .year .techs.right .tech {
-    left: 2em;
+    left: 2.5em;
 }
 
 

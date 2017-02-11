@@ -42,6 +42,7 @@ const experience = [
     { name: 'Symfony 2',      from: '2013|3',  to: '2014|8', position: 'left'  },
     { name: 'Trello',         from: '2012|9',  to: '2017|1', position: 'right' },
     { name: 'VBA',            from: '2014|5',  to: '2015|1', position: 'right' },
+    { name: 'Vim',            from: '2011|7',  to: '2017|1', position: 'right' },
     { name: 'Wordpress',      from: '2010|3',  to: '2010|7', position: 'left'  },
     { name: 'Yii 1',          from: '2011|1',  to: '2012|4', position: 'left'  },
     { name: 'Yii 2',          from: '2015|3',  to: '2016|5', position: 'left'  },
