@@ -274,7 +274,6 @@ p {
 #page2 #tasks .task:nth-child(8)  { animation: toggleFade8  40s linear infinite; }
 #page2 #tasks .task:nth-child(9)  { animation: toggleFade9  40s linear infinite; }
 #page2 #tasks .task:nth-child(10) { animation: toggleFade10 40s linear infinite; }
-
 #page2 button {
 	background: #B71C1C;
 	border: 1px solid #B71C1C;
@@ -296,9 +295,6 @@ p {
     box-shadow: 0 2px 0 #6a2723;
     top: 7px;
 }
-#page2 button:active + .task {
-    color: red;
-}
 #page2 button:hover {
     cursor: pointer;
 }
@@ -310,6 +306,22 @@ p {
 }
 #page3 abbr {
     border-bottom: 2px dashed #222;
+    position: relative;
+}
+#page3 abbr:hover:after {
+    background: #333;
+    border-radius: 0.2em;
+    bottom: 1.4em;
+    color: #fff;
+    content: attr(rel);
+    font-size: 0.8em;
+    right: -20%;
+    opacity: 0.8;
+    padding: 0.2em 0.5em;
+    position: absolute;
+    text-align: center;
+    width: 14em;
+    z-index: 100;
 }
 #page3 #timeline {
     margin: 2em auto;
@@ -413,6 +425,7 @@ p {
 footer {
     bottom: 10vh;
     left: 0;
+    margin: 5em 0 0;
     position: absolute;
     width: 100%;
 }
@@ -434,6 +447,13 @@ footer p {
         width: 50%;
     }
 
+    #page3 abbr:hover:after{
+        font-size: 0.7em;
+        line-height: 1em;
+        right: -10%;
+        width: 10em;
+    }
+
     #page3 #timeline {
         width: 100%;
     }
@@ -448,6 +468,10 @@ footer p {
     .page .col.three,
     .page .col.four {
         width: 100%;
+    }
+
+    #page3 abbr:hover:after{
+        left: 10%;
     }
 
 }

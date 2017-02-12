@@ -25,7 +25,7 @@ document.querySelector('#timeline').innerHTML = html;
 const experience = [
 
     { name: 'Android',        from: '2011|9',  to: '2012|3', position: 'right' },
-    { name: 'Apache2',        from: '2008|1',  to: '2017|1', position: 'left'  },
+    { name: 'Apache 2',       from: '2008|1',  to: '2017|1', position: 'left'  },
     { name: 'Angular 1',      from: '2013|5',  to: '2016|8', position: 'right' },
     { name: 'Angular 2',      from: '2016|5',  to: '2017|1', position: 'right' },
     { name: 'AWS',            from: '2011|9',  to: '2012|3', position: 'right' },
@@ -35,7 +35,7 @@ const experience = [
     { name: 'Drupal',         from: '2010|3',  to: '2010|7', position: 'left'  },
     { name: 'Ext JS',         from: '2009|8',  to: '2015|8', position: 'right' },
     { name: 'Firebase',       from: '2015|2',  to: '2015|5', position: 'left'  },
-    { name: 'git',            from: '2010|8',  to: '2017|1', position: 'right' },
+    { name: 'Git',            from: '2010|8',  to: '2017|1', position: 'right' },
     { name: 'Heroku',         from: '2015|1',  to: '2015|3', position: 'right' },
     { name: 'HTML',           from: '2008|1',  to: '2017|1', position: 'right' },
     { name: 'JavaScript',     from: '2008|1',  to: '2017|1', position: 'right' },
