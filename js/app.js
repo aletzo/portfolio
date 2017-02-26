@@ -51,6 +51,7 @@ const experience = [
     { name: 'NGINX',          from: '2011|8',  to: '2013|2', position: 'left'  },
     { name: 'Node.js',        from: '2014|1',  to: '2017|1', position: 'left'  },
     { name: 'PHP',            from: '2008|1',  to: '2017|1', position: 'left'  },
+    { name: 'Postgres',       from: '2017|1',  to: '2017|3', position: 'left'  },
     { name: 'React',          from: '2017|1',  to: '2017|1', position: 'right' },
     { name: 'Redis',          from: '2013|7',  to: '2013|9', position: 'left'  },
     { name: 'Silex',          from: '2016|5',  to: '2016|9', position: 'left'  },
