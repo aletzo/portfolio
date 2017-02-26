@@ -444,7 +444,11 @@ footer p {
     .page .col.two,
     .page .col.three,
     .page .col.four {
-        width: 50%;
+        width: 100%;
+    }
+
+    #page1 h2 {
+        font-size: 50%;
     }
 
     #page3 abbr:hover:after{
@@ -464,12 +468,6 @@ footer p {
 }
 
 @media (max-width: 350px) {
-    .page .col.two,
-    .page .col.three,
-    .page .col.four {
-        width: 100%;
-    }
-
     #page3 abbr:hover:after{
         left: 10%;
     }
