@@ -1,5 +1,7 @@
 const currentYear = new Date().getFullYear();
 
+document.querySelector('#currentYear').innerHTML = currentYear;
+
 let html = '<div class="line half"></div>';
 
 for (var i = currentYear; i >= 2008; i--) {
@@ -19,8 +21,6 @@ for (var i = currentYear; i >= 2008; i--) {
 html += '<div class="line half"></div>';
 
 document.querySelector('#timeline').innerHTML = html;
-
-
 
 const experience = [
 
