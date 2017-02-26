@@ -465,6 +465,10 @@ footer p {
     #page3 #timeline .year .techs .tech {
         padding: 0.5em;
     }
+
+    footer {
+        bottom: 2vh;
+    }
 }
 
 @media (max-width: 350px) {
