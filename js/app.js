@@ -1,6 +1,6 @@
 const currentYear = new Date().getFullYear();
 
-document.querySelector('#currentYear').innerHTML = currentYear;
+document.querySelector('#currentYear').innerHTML = new Date().getFullYear();
 
 let html = '<div class="line half"></div>';
 
